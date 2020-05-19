@@ -1,0 +1,87 @@
+.nav {
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    padding: 0 0 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    transition: transform 0.5s;
+}
+
+.nav-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    font-size: 1.5em;
+}
+.nav-title .drawer-button {
+    cursor: pointer;
+}
+.nav-title .chess-title {
+    padding-left: 15px;
+    padding-bottom: 4px;
+    color: #34495e;
+}
+.nav-title .clock-title {
+    color: #d35400;
+}
+
+.nav ul {
+    padding: 0;
+    margin: 0;
+    border-bottom-left-radius: 10px;
+}
+.nav li {
+    cursor: pointer;
+    border: 1px solid #e67e22;
+    display: inline-block;
+    text-align: center;
+    padding: 20px;
+    min-width: 60px;
+
+    transition: 0.5s ease-in-out;
+}
+.nav li:first-of-type {
+    border-bottom-left-radius: 40px;
+}
+
+.time-control-title {
+    font-weight: bold;
+    color: #2c3e50;
+}
+.time-control-timer {
+    color: #6c8197;
+}
+.time-control-icon {
+    color: #2c3e50;
+}
+
+.nav li:hover:not(.active) {
+    background: #fdd38e;
+}
+
+.active {
+    background: #e67e22;
+}
+.active .time-control-title, .active .time-control-timer, .active .time-control-icon {
+    color: white !important;
+}
+
+@media screen and (max-width: 780px) {
+    .nav .nav-menu {
+        display: none;
+    }
+    .copyright, .press-space {
+        display: none;
+    }
+    footer {
+        min-height: 60px;
+        display: inline;
+        text-align: end;
+    }
+} 
