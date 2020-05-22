@@ -1,18 +1,14 @@
 .clock {
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     margin: auto;
-}
 
-@media screen and (max-width: 780px) {
-    .clock {
-        transform: scale(0.5);
-    }
-    .black-player-clock h1, .white-player-clock h1 {
-        transform: scale(2.5);
-    }
+    max-width: 95%;
+    height: 75%;
+    z-index: -1;
 }
 
 .clock-body {
@@ -24,7 +20,7 @@
     width: 35rem;
     transform: perspective(400px) rotateX(15deg);
     margin: auto;
-    display: grid;
+    display: grid; /*grid*/
     justify-content: center;
     grid-template-columns: 50% 50%;
 }
@@ -163,4 +159,68 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+}
+
+/******************* MOBILE *******************/
+
+@media screen and (max-width: 780px) {
+    .clock-body {
+        display: none !important;
+    }
+    .mobile-clock {
+        display: flex !important;
+    }
+}
+@media screen and (max-height: 300px) {
+    .chess-title {
+        display: none;
+    }
+}
+
+.mobile-clock {
+    position: relative;
+    display: none; /*none*/
+    flex-wrap: wrap;
+    justify-content: center;
+    position:relative;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.player-clock {
+    cursor: pointer;
+    width: 200px;
+    height: 180px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /*typography*/
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: white;
+}
+
+.mobile-controls {
+    position: absolute;
+    bottom: -60px;
+    overflow-x: hidden;
+}
+.mobile-controls button {
+    cursor: pointer;
+    border: none;
+    padding: 15px;
+    margin: 5px;
+    background: none;
+
+    color: #2c3e50;
+    font-size: 1em;
+}
+.mobile-controls button span {
+    width: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

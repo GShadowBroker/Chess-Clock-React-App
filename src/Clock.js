@@ -229,6 +229,49 @@ class Clock extends Component {
                     <div className={ leftSwitchClass }/>
                     <div className={ rightSwitchClass }/>
                 </div>
+
+                {/* mobile */}
+
+                <div className="mobile-clock">
+                    <div
+                        className="player-clock white-player-clock-mobile"
+                        onClick={ this.passTurn }
+                        style={ this.state.toPlay === 'white'
+                            ? { backgroundColor: '#d35400' }
+                            : { background: '#2c3e50' } }
+                    >
+                        <h1>{ moment.utc(this.state.whiteTimer * 1000).format('mm.ss') }</h1>
+                    </div>
+                    <div
+                        className="player-clock black-player-clock-mobile"
+                        onClick={ this.passTurn }
+                        style={ this.state.toPlay === 'black'
+                            ? { backgroundColor: '#d35400' }
+                            : { background: '#2c3e50' } }
+                    >
+                        <h1>{ moment.utc(this.state.blackTimer * 1000).format('mm.ss') }</h1>
+                    </div>
+
+                    <div className="mobile-controls">
+                    <button
+                            className="pause-button-mobile"
+                            onClick={ this.togglePause }
+                            disabled={ this.state.gameFinished || !this.state.gameStarted }
+                        >
+                            {
+                                this.state.paused
+                                ? <span><BsFillPlayFill/> Unpause</span>
+                                : <span><BsFillPauseFill/> Pause</span>
+                            }
+                        </button>
+                        <button
+                            className="reset-button-mobile"
+                            onClick={ this.resetTimer }
+                        >
+                            <span>Reset <BsFillSkipBackwardFill/></span>
+                        </button>
+                    </div>
+                </div>
             </div>
         )
     }

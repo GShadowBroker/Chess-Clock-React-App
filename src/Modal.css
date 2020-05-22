@@ -1,0 +1,152 @@
+.modal-overlay {
+    z-index: -1;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: opacity 0.3s linear;
+}
+.modal__is-overlay-active {
+    z-index: 1;
+    opacity: 1;
+}
+
+.modal {
+    opacity: 0;
+
+    z-index: 5;
+    position: fixed;
+    max-width: 85%;
+    width: 400px;
+    max-height: 100%;
+    height: 400px;
+
+    background: white;
+    border-radius: 10px;
+    transition: visibility 0.3s linear, transform 0.3s linear;
+
+    /*content*/
+    padding: 20px;
+    transform: translateY(-50px);
+    color: #2c3e50;
+}
+
+.modal__is-open {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: visibility 0.3s linear, transform 0.3s linear;
+}
+
+.modal-actions {
+    position: absolute;
+    bottom:0;
+    left:0;
+    width: 100%;
+    height: 70px;
+    border-top: 0.5px solid grey;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.modal-actions button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: 1.3em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #2c3e50;
+    padding: 15px;
+    margin: 5px;
+}
+#modal-close-button {
+    color: #34495e;
+    transition: background-color 0.3s linear;
+    border-radius: 5px;
+}
+#modal-close-button:hover {
+    background: #ecf0f1;
+}
+#modal-save-button {
+    color: #d35400;
+    transition: background-color 0.3s linear;
+    border-radius: 5px;
+}
+#modal-save-button:hover {
+    background: #f8ebd6;
+}
+
+.modal-content {
+    height: 70%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.modal-timer-input {
+    width: 80%;
+    padding: 20px;
+    margin-bottom: 5px;
+
+    display: grid;
+    grid-template-columns: 40% 60%;   
+}
+
+.modal-increment-input {
+    width: 80%;
+    padding: 20px;
+    margin-top: 5px;
+
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+.modal-increment-input label, .modal-timer-input label {
+    font-size: 1.5em;
+    color: #2c3e50;
+    display: flex;
+    align-items: center;
+}
+
+input {
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    font-size: 1.5em;
+    background: #f8ebd6;
+    color: #d35400;
+
+    transition: box-shadow 0.2s linear;
+    text-align: right;
+    padding: 10px;
+}
+.modal-actions button:disabled {
+    color: #fadaa7 !important;
+    cursor: not-allowed;
+}
+input::placeholder {
+    color: #f39c12;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+input:focus{
+    outline: none;
+    box-shadow: 1px 1px 4px rgb(150, 149, 149);
+}
