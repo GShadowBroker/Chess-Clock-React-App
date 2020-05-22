@@ -24,9 +24,9 @@ class Clock extends Component {
         this.resetTimer = this.resetTimer.bind(this)
         this.runWhiteTimer = null
         this.runBlackTimer = null
-        this.passTurnAudio = new Audio('http://192.168.0.104:3000/button.wav')
+        this.passTurnAudio = new Audio('https://onlinechessclock.netlify.app/button.wav')
         this.playButtonAudio = this.playButtonAudio.bind(this)
-        this.timeoutAudio = new Audio('http://192.168.0.104:3000/timeout.wav')
+        this.timeoutAudio = new Audio('https://onlinechessclock.netlify.app/timeout.wav')
         this.playTimeoutAudio = this.playTimeoutAudio.bind(this)
     }
 
