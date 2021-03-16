@@ -10,7 +10,7 @@ A Chess Timer web app for tracking time in OTB chess. Open your laptop or mobile
 
 The live version of the app can be found at: https://onlinechessclock.netlify.app/
 
-## Instalação
+## Installation and deployment
 
  1. Clone the project: `git clone
     https://github.com/GShadowBroker/Chess-Clock-React-App.git`
