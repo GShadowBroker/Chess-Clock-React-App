@@ -1,68 +1,32 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Chess Clock / Chess-Clock-React-App
 
-## Available Scripts
+## About / Synopsis
 
-In the project directory, you can run:
+A Chess Timer web app for tracking time in OTB chess. Open your laptop or mobile browser and start managing the time between turns! Some of the tech used includes: 
 
-### `npm start`
+ - ReactJS
+ - Create React App
+ - CSS Vanilla
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The live version of the app can be found at: https://onlinechessclock.netlify.app/
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Instalação
 
-### `npm test`
+ 1. Clone the project: `git clone
+    https://github.com/GShadowBroker/Chess-Clock-React-App.git`
+    
+ 2. Open the folder and install dependancies: `cd
+    chess-clock-react-app && npm install`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. Start the development server:
+	`npm run start`
 
-### `npm run build`
+5. Build and deploy:
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+	`npm run build`
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+![enter image description here](https://gledyson.netlify.app/static/chess_1-b872a4fbd1ac34d05490c2080bed86d8.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## License
+MIT
+2020 - Todos os direitos reservados
